@@ -1,8 +1,33 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>My layout</title>
+        <title>Flexible layout</title>
         <meta charset="utf-8">
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                margin: 0;
+            }
+            aside {
+                background: deepskyblue;
+            }
+            footer {
+                background: tomato;
+            }
+            header {
+                background: gold;
+            }
+            main {
+                background: lightgreen;
+                display: flex;
+                flex: 1;
+            }
+        </style>
     </head>
 
     <body>
