@@ -1,4 +1,5 @@
 .description {
     display: inline-block;
-    vertical-align: top;
+    align-self: flex-start;
+    position: absolute;
 }
