@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Counter</title>
+        <meta charset="utf-8">
+        <script src="style.css"></script>
+    </head>
+    <body>
+
+<p id="timer"></p>
+<button id="myButton" onclick="toggle()">Stop</button>
+
+<script type="text/javascript">
+var startTimer = setInterval(myTimer, 1000),
+    timerElement = document.getElementById("timer"),
+    buttonElement = document.getElementById("myButton");
+
+function myTimer(){
+    var current = new Date();
+    timerElement.innerHTML = current.toLocaleTimeString();
+}
+
+function toggle(){
+    if (startTimer) {
+        clearInterval(startTimer);
+        startTimer = null;
+        buttonElement.innerHTML = "Start";
+    } else {
+        buttonElement.innerHTML = "Stop";
+        startTimer = setInterval(myTimer, 1000);
+    }
+}
+        </script>
+    </body>
+</html>
