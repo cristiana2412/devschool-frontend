@@ -24,7 +24,7 @@ module.exports = {
 
     devServer: {
         host: 'localhost',
-        port: 8000,
+        port: 8001,
         writeToDisk: false,
         contentBase:false,
         overlay: {
